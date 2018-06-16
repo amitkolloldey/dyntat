@@ -1,0 +1,91 @@
+.side-button-div {
+    z-index: 100;
+    position: fixed;
+    right: -159px;
+    bottom: 25%;
+    display: block;
+    width: 200px;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    -webkit-transition: all 3s;
+    -moz-transition: all 3s;
+    -ms-transition: all 3s;
+    -o-transition: all 3s;
+    transition: all 3s;
+}
+
+.quick-contact-div:hover {
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -ms-transition: all 2s;
+    -o-transition: all 2s;
+    transition: all 2s;
+}
+
+.book-test-div:hover {
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -ms-transition: all 2s;
+    -o-transition: all 2s;
+    transition: all 2s;
+
+
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+
+.book-test-div {
+    margin-top: 7px;
+    background-color: #f54e16;
+    width: 200px;
+    border-radius: 5px;
+}
+.quick-contact-div{
+    background-color: #f54e16;
+    width: 200px;
+    border-radius: 5px;
+}
+.side-button-div img {    padding: 2px;
+    width: 40px;
+    height: 40px;
+}
+
+.quick-contact {
+    display: inline-block;
+}
+
+.book-test-text {
+    display: inline-block;
+    margin-top: 5%;
+    color: white;
+}
+
+.quick-contact-text {
+    display: inline-block;
+    margin-top: 7%;
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .side-button-div {
+        display: none;
+    }
+}
+
+@media (max-width: 479px) {
+    .side-button-div {
+        display: none;
+    }
+}

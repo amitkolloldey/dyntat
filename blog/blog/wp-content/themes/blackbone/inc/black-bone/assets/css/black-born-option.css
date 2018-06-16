@@ -1,0 +1,552 @@
+/*
+primary color: #00a9da    #eff0f2     #eee
+heading color: #363636
+heading sub color: #626262      1px solid #e7e7e7
+*/
+.black-born-page-wrapper {
+  background: #ffffff none repeat scroll 0 0;
+  box-sizing: border-box;
+  margin: 50px 0; 
+  width: 98%;
+}
+.black-born-page-wrapper form#bbOptionsForm {
+  display: block;
+  margin: 0;
+}
+.main-body{
+	overflow: hidden;
+	margin-top: 50px;
+}
+.black-born-option {
+  background: #23282d none repeat scroll 0 0;
+  display: block;
+  max-width: 100%; 
+}
+.bb-option-menu {
+  float: left;
+  position: relative;
+  width: 230px;
+}
+.bb-option-menu ul { 
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+.bb-option-menu ul li{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+.bb-option-menu ul li a {
+  background: transparent none repeat scroll 0 0;
+  color: #eff0f2;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  padding: 12px 5px 12px 60px;
+  position: relative;
+  text-decoration: none;
+}
+.bb-option-menu ul li a:focus{
+  box-shadow: none;
+}
+.bb-option-menu ul li a i {
+  font-size: 20px;
+  left: 25px;
+  line-height: 20px;
+  position: absolute;
+  top: 15px;
+}
+.bb-option-menu ul .bb-submenu {
+  background: #32373c;
+  display: none;
+  padding-left: 30px;
+}
+.bb-submenu .bb-menu-li a {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  padding: 8px 5px 8px 45px;
+}
+.bb-option-menu ul li a.bb-link.bb-active {
+  background: #3498db; /*    #191e23    */
+  color: #ffffff;
+}
+.bb-option-menu ul.bb-submenu li a.bb-link.bb-active {
+  background: transparent none repeat scroll 0 0;
+  color: #ffffff;
+  font-weight: bold;
+}
+/*------------ Section CSS ----------*/
+
+.bb-option-container {
+  background: #ffffff none repeat scroll 0 0; 
+  display: block;
+  margin-left: 230px;
+  position: relative;
+}
+.bb-option-menu .bb-logo {
+  background: #ffffff none repeat scroll 0 0;
+  border-color: #3498dc #3498dc #e8edef;
+  border-style: solid;
+  border-width: 5px;
+  box-shadow: 0 0 60px #e8edef inset;
+  box-sizing: border-box; 
+  height: 150px;
+  padding: 20px 15px;
+}
+.bb-logo > h2 {
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+.bb-logo > span {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+}
+.bb-option-container .bb-header {
+  background: rgba(232, 237, 239, 1) none repeat scroll 0 0;
+  border-bottom: 1px solid #d2d2d2;
+    border-top: 1px solid #d2d2d2;
+  box-shadow: none;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px 50px;
+  position: relative;
+  text-align: right;
+}
+.bb-option-container .bb-header-baner {
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+  display: none;
+}
+.bb-option-container .bb-header-baner img {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+.bb-option-container .bb-section {
+  box-sizing: border-box;
+  clear: none; 
+  padding: 25px 50px;
+  position: relative;
+  width: 100%;
+}
+.bb-option-container .bb-section .bb-single-section {
+  width: 100%;
+}
+.bb-section .bb-single-section table.form-table {
+  clear: none;
+  margin-top: 0 !important;
+} 
+.bb-header-footer .alert.alert-dismissible.alert-success.bb-alert-success {
+  height: 100%;
+  left: 0;
+  line-height: 50px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+  position: absolute;
+  top: 0;
+  display: none;
+}
+.bb-header-footer .alert {
+  float: left;
+  max-width: 70%;
+}
+.bb-section .bb-ajax-disble {
+  background: rgba(255, 255, 255, 0.9) none repeat scroll 0 0;
+  display: none;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+.bb-ajax-disble > img{   
+  left: 48%;
+  position: absolute;
+  text-align: center;
+  top: 48%; 
+}
+.bb-option-container .bb-footer {
+  background: rgba(232, 237, 239, 1) none repeat scroll 0 0;
+  border-bottom: 1px solid #d2d2d2;
+    border-top: 1px solid #d2d2d2;
+  clear: both;
+  padding: 10px 15px;
+  text-align: right;
+}
+
+
+
+/*--------------------------- form css start ------------------ */
+.radio input[type="radio"], label.radio-inline input[type="radio"] {
+  opacity: 1; 
+}
+.bb-single-section > h2 {
+  background: rgba(232, 237, 239, 0.5) none repeat scroll 0 0;
+  font-weight: bold;
+  margin: 0 0 25px;
+  padding: 15px 20px;
+  position: relative;
+  text-transform: uppercase;
+  z-index: 99;
+}
+.fieldes-cont > h5 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+}
+.fieldes-cont .description {
+  color: #858585;
+  display: block;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 6px;
+} 
+.bb-single-section .form-table th {
+  padding: 0;
+  width: 50% !important;
+}
+.bb-single-section .form-table td { 
+  padding: 0;
+  width: 50% !important;
+}
+.bb-single-section .form-table .bb-single-field {
+  border-bottom: 1px solid #e5e5e5;
+}
+.bb-single-section .form-table .bb-single-field:last-child {
+  border-bottom: medium none;
+}
+.bb-single-field .fieldes-cont {
+  padding: 25px 60px 25px 0;
+}
+.bb-single-section .form-table .form-group {
+  margin-top: 0;
+  overflow: visible;
+  padding: 25px 0;
+}
+.bb-single-section .bb-field-warp::after, 
+.bb-single-section .bb-field-warp::before {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.form-group.bb-field-warp .form-control {
+  background: #f7f7f7;
+  border: 1px solid #d2d2d2;
+  box-shadow: none;
+  border-radius: 0px;
+  height: auto;
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 0px;
+  padding: 8px 10px;
+  color: #32373c;
+  width: 100%;
+}
+.form-group.bb-field-warp select.form-control{
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+} 
+.form-group.bb-field-warp.media .form-control{
+  width: 63%;
+  float: left;
+}
+.bb-field-warp.media .bb-input-image {
+  clear: both;
+  float: left;
+  margin-top: 10px;
+  max-width: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+.btn.bb-btn {
+  border: 1px solid #d2d2d2;
+  box-shadow: none !important;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 0;
+  padding: 6px 16px;
+  text-transform: capitalize;
+}
+.btn.bb-btn:focus{
+  box-shadow:  0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12) !important;
+}
+.form-group.bb-field-warp.media .bb-upmedia {
+  background: #f7f7f7 none repeat scroll 0 0;
+  color: #555;
+  float: left;
+  margin-left: 1%;
+  margin-top: 0;
+  width: 35%;
+}
+.radio input[type="radio"]:checked ~ .circle, label.radio-inline input[type="radio"]:checked ~ .circle {
+  border-color: #3498db;
+}
+.radio input[type="radio"]:checked ~ .check, label.radio-inline input[type="radio"]:checked ~ .check {
+  background-color: #3498db;
+}
+.checkbox input[type="checkbox"]:checked + .checkbox-material .check::before, label.checkbox-inline input[type="checkbox"]:checked + .checkbox-material .check::before {
+  box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0 32px 0 20px, -5px 5px 0 10px, 20px -12px 0 11px;
+  color: #3498db;
+}
+.checkbox input[type="checkbox"]:checked + .checkbox-material .check, label.checkbox-inline input[type="checkbox"]:checked + .checkbox-material .check {
+  border-color: #3498db;
+  color: #3498db;
+}
+.checkbox .checkbox-material .check, label.checkbox-inline .checkbox-material .check {
+  border-radius: 0; 
+}
+.checkbox .checkbox-material, label.checkbox-inline .checkbox-material {
+  margin-right: 15px; 
+}
+.radio label, label.radio-inline { 
+  padding-left: 35px; 
+}
+.radio span, label.radio-inline span { 
+  left: 0; 
+}
+
+.bb-field-warp .bb-input-image > img {
+  max-height: 248px !important;
+  max-width: 100% !important;
+}
+.form-group.bb-field-warp .checkbox label, 
+.form-group.bb-field-warp .radio label, 
+.form-group.bb-field-warp label {
+  color: #72777c; 
+}
+
+.bb-field-warp .wp-color-result {
+  border-radius: 0;
+  display: block;
+  float: left;
+  height: 34px;
+  padding-left: 40px;
+  width: 100px;
+}
+.bb-field-warp .wp-color-result::after {
+  line-height: 35px;
+}
+.bb-field-warp .wp-picker-input-wrap {
+  display: block;
+  float: left;
+}
+.bb-field-warp .wp-picker-holder {
+  clear: both;
+  display: block;
+}
+.bb-field-warp .wp-picker-input-wrap .form-control.bb-color-alpha-input {
+  float: left;
+  width: 160px !important;
+}
+.bb-field-warp .wp-picker-input-wrap .wp-picker-clear {
+  border-radius: 0;
+  box-shadow: none;
+  float: left;
+  height: 34px;
+  line-height: 33px;
+  width: 60px;
+}
+
+.form-group.bb-field-warp .form-control.bb-sliders-input {
+  float: left;
+  width: 20%;
+}
+.form-group.bb-field-warp .bb-sliders.ui-slider {
+  background: #d2d2d2 none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 0;
+  float: right;
+  height: 2px;
+  margin: 13px 0;
+  width: 70%;
+}
+.form-group.bb-field-warp .bb-sliders.ui-slider .ui-slider-range-min {
+  background: #3498db none repeat scroll 0 0;
+  left: 0;
+}
+.form-group.bb-field-warp .bb-sliders.ui-slider .ui-slider-handle {
+  background: #3498db none repeat scroll 0 0 !important;
+  border: medium none !important;
+  border-radius: 50px;
+  height: 12px;
+  margin-left: -12px;
+  top: -6px;
+  width: 12px;
+  cursor: ew-resize;
+  -webkit-transition: transform 0.2s ease-out 0s;
+  -moz-transition: transform 0.2s ease-out 0s;
+  -ms-transition: transform 0.2s ease-out 0s;
+  -o-transition: transform 0.2s ease-out 0s;
+  transition: transform 0.2s ease-out 0s;
+}
+.form-group.bb-field-warp .bb-sliders.ui-slider .ui-slider-handle.ui-state-active{
+  -webkit-transform: scale3d(2.5, 2.5, 1);
+  -ms-transform: scale3d(2.5, 2.5, 1);
+  -o-transform: scale3d(2.5, 2.5, 1);
+  transform: scale3d(2.5, 2.5, 1);
+
+  -webkit-transition: transform 0.2s ease-out 0s;
+  -moz-transition: transform 0.2s ease-out 0s;
+  -ms-transition: transform 0.2s ease-out 0s;
+  -o-transition: transform 0.2s ease-out 0s;
+  transition: transform 0.2s ease-out 0s;
+  
+}
+
+.form-group.bb-field-warp.dimensions .width, .form-group.bb-field-warp.dimensions .height {
+  float: left;
+  width: 48%;
+}
+.form-group.bb-field-warp.dimensions .width {
+}
+.form-group.bb-field-warp.dimensions .height {
+  float: right; 
+}
+.form-group.bb-field-warp.dimensions .width .form-control, 
+.form-group.bb-field-warp.dimensions .height .form-control{
+  float: right;;
+  width: 80%;
+}
+
+.form-group.bb-field-warp.dimensions .width i, 
+.form-group.bb-field-warp.dimensions .height i{
+  border-bottom: 1px solid #d2d2d2;
+  border-left: 1px solid #d2d2d2;
+  border-top: 1px solid #d2d2d2;
+  display: inline-block;
+  font-size: 16px;
+  height: 100%;
+  line-height: 19px;
+  padding: 8px 0;
+  text-align: center;
+  width: 20%;
+}
+.form-group.bb-field-warp.spacing .spacing {
+  border: 1px solid #d2d2d2;
+  float: left;
+  margin-right: 5px;
+  overflow: hidden;
+  position: relative;
+  width: calc(100% / 4 - 5px);
+}
+.form-group.bb-field-warp.spacing .spacing .form-control {
+  border: medium none;
+  float: right;
+  margin: 0;
+  padding-left: 45px;
+  width: 100%;
+}
+.form-group.bb-field-warp.spacing .spacing i {
+  background: #fff none repeat scroll 0 0;
+  border-right: 1px solid #d2d2d2;
+  display: inline-block;
+  font-size: 16px;
+  height: 100%;
+  line-height: 33px;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  width: 35%;
+}
+.bb-field-warp .radio.bb-buttonset .buttonsetBoxed, 
+.bb-field-warp .bb-switch .switchBoxed, 
+.bb-field-warp .radio.bb-image-select .imagesetBoxed {
+  background: #f7f7f7 none repeat scroll 0 0;
+  border-bottom: 1px solid #d2d2d2;
+  border-right: 1px solid #d2d2d2;
+  border-top: 1px solid #d2d2d2;
+  color: #32373c;
+  font-size: 14px;
+  margin-left: 0;
+  margin-right: 0;
+  overflow: hidden;
+  padding: 6px 12px;
+  position: relative;
+
+  -webkit-transition: all 0.2s ease-out 0s;
+  -moz-transition: all 0.2s ease-out 0s;
+  -ms-transition: all 0.2s ease-out 0s;
+  -o-transition: all 0.2s ease-out 0s;
+  transition: all 0.2s ease-out 0s;
+}
+.bb-field-warp .radio.bb-buttonset .buttonsetBoxed:first-child, 
+.bb-field-warp .bb-switch .switchBoxed:first-child {
+  border-left: 1px solid #d2d2d2;
+}
+.bb-field-warp .radio.bb-buttonset .buttonsetBoxed input[type="radio"],
+.bb-field-warp .radio.bb-image-select .imagesetBoxed input[type="radio"] {
+  clip: rect(0px, 0px, 0px, 0px);
+  left: 20px;
+  opacity: 1;
+  position: absolute;
+  top: 5px;
+}
+.bb-field-warp .radio.bb-buttonset .buttonsetBoxed.buttonset-active, 
+.bb-field-warp .bb-switch .switchBoxed.switch-active, 
+.bb-field-warp .radio.bb-image-select .imagesetBoxed.image-active {
+  background: #3498db none repeat scroll 0 0;
+  color: #eff0f2;
+  -webkit-transition: all 0.2s ease-out 0s;
+  -moz-transition: all 0.2s ease-out 0s;
+  -ms-transition: all 0.2s ease-out 0s;
+  -o-transition: all 0.2s ease-out 0s;
+  transition: all 0.2s ease-out 0s;
+}
+.bb-field-warp .bb-switch .switchBoxed.disable.switch-active {
+  background: #23282d none repeat scroll 0 0 !important;
+  color: #eff0f2;
+  -webkit-transition: all 0.2s ease-out 0s;
+  -moz-transition: all 0.2s ease-out 0s;
+  -ms-transition: all 0.2s ease-out 0s;
+  -o-transition: all 0.2s ease-out 0s;
+  transition: all 0.2s ease-out 0s;
+}
+.bb-field-warp .radio.bb-image-select .imagesetBoxed {
+  background: transparent none repeat scroll 0 0;
+  border: 2px solid #d2d2d2;
+  margin-right: 10px !important;
+  max-width: 85px;
+  padding: 4px 5px;
+  text-align: center;
+}
+.bb-field-warp .radio.bb-image-select .imagesetBoxed.image-active {
+  background: transparent;
+  border-color: #3498db;
+  color: #eff0f2;
+  transition: all 0.2s ease-out 0s;
+}
+.bb-section .bb-single-field.bb-field-info{
+  display: none !important;
+}
+.bb-section .bb-field-warp.bb-info-bar {
+  background: #f7f7f7 none repeat scroll 0 0;
+  border-bottom: 1px solid #3498db;
+  border-top: 1px solid #3498db;
+  margin: 50px 0;
+  padding: 12px 11px;
+}
+.bb-field-warp.bb-info-bar > span {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+}
+.bb-field-warp .nice-select.open .list {
+  max-height: 270px; 
+  overflow-y: scroll; 
+}

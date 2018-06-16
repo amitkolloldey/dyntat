@@ -1,0 +1,260 @@
+/* The Modal (background) */
+.modal-login {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    padding-top: 40px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content-login {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 28%;
+    margin-top: 20px;
+    
+}
+
+.login-facebook-icon {
+    text-align: center;
+}
+
+.login-facebook-image{
+    width: 91%;
+    height: 50px;
+    margin-bottom: 20px;
+}
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+/* The Close Button */
+.close-login {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-login:hover,
+.close-login:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header-login {
+    padding: 2px 16px;
+    background-color: #fff;
+    color: white;
+}
+
+.modal-body-login {
+    padding: 2px 16px;
+}
+
+.modal-footer-login {
+    padding: 2px 16px;
+    background-color: #FFF;
+    color: white;
+}
+
+.quick_con-login li {
+    width: 100%;
+    padding: 0px 0px 4px;
+    position: relative;
+    float: left;
+}
+
+.quick_con-login li img {
+    width: 35px;
+    height: 35px;
+    margin: 0 16px;
+    float: left;
+}
+
+.quick_con-login li .content-login {
+    float: left;
+    width: 73%;
+}
+
+.quick_con-login li .content-login span.title-login {
+    float: left;
+    color: #333;
+    margin-bottom: 0px;
+    font-weight: 700;
+    width: 100%;
+}
+
+.quick_con-login li .content-login span.week {
+    font-size: 12px;
+    color: #383838;
+    line-height: 1.5;
+}
+
+.quick_con-login li a {
+    color: #383838;
+    display: block;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.quick_con-login li ul li {
+    float: left;
+    padding: 0px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.quick_con-login li .content-login span.title-login span {
+    font-weight: 400;
+    display: inline;
+}
+
+.modal__h4{
+    text-transform: uppercase;
+    border-bottom: 1px solid #ebebeb;
+    margin: 0 0 25px;
+    padding-bottom: 8px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.facebook-button-wrapper{
+    box-sizing: border-box;
+    display: block;
+
+}
+
+.facebook-button{
+    background-color: #3b5998;
+    border-color: #3b5998;
+    color: #fff;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.facebook-button__content{
+    text-align: center;
+    box-sizing: border-box;
+    color: #fff;
+    white-space: nowrap;
+    cursor: pointer;
+
+    font-family: "MuseoSans",Arial,sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 46px;
+}
+.facebook-button__logo{
+    text-align: center;
+    box-sizing: border-box;
+    background-size: 325px 1145px;
+    background-image: url(../images/sprite.png);
+    background-position: 0px -122px;
+    width: 29px;
+    height: 29px;
+    line-height: 35px;
+    height: 32px;
+    background-repeat: no-repeat;
+    padding-left: 32px;
+    display: inline-block;
+    width: auto;
+    margin-left: -10px;
+}
+.facebook-button:hover, .facebook-button:focus {
+    background-color: #36528c;
+    border-color: #36528c;
+    color: #fff;
+}
+.login-separator {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 11px 0;
+    color: #888;
+}
+
+.forgot-pp{
+    display: block;
+    position: absolute;
+    right: 16px;
+    top: 20%;
+    z-index: 2;
+    /*height: 48px;*/
+    /*line-height: 48px;*/
+    color: #f75016;
+    font-weight: lighter;
+}
+
+.modal__padding-left-right{
+    width: 100%;
+    padding: 0 24px;
+    color: #fff;
+    background-color: #f75016;
+    border-color: #f75016;
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    font-family: "MuseoSans",Arial,sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    height: 48px;
+    border: 1px solid;
+    border-radius: unset;
+    padding: 0 15px;
+    line-height: 46px;
+    display: inline-block;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.login-registration-link{
+    margin-top: 8px;
+    font-size: 1.4rem;
+    line-height: 1.83;
+    text-align: center;
+}

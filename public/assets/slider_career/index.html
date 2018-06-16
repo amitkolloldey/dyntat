@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<link rel="stylesheet" href="prettyPhoto.css" type="text/css"/>
+<link rel="stylesheet" href="flexslider.css" type="text/css"/>
+<link rel="stylesheet" href="nivo-slider.css" type="text/css"/>
+<style type="text/css">
+
+
+</style>
+
+<script type="text/javascript" src="http://www.dyntatbd.com/layout/js/jquery.js"></script>
+<script type="text/javascript" src="jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="jquery.tools.min.js"></script>
+<script type="text/javascript" src="html5.js"></script>
+<script type="text/javascript" src="jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript" src="jquery.scroll.to.min.js"></script>
+<script type="text/javascript" src="jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="jquery.form.js"></script>
+<script type="text/javascript" src="jquery.sort.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#Menucontent").load("menu.asp?page=opppage");
+        $("#Footercontent").load("footer_inner.html");
+        $("#txt_Mob").ForceNumericOnly();
+        $("#txt_Mob_log").ForceNumericOnly();
+        $('#txt_Name').ForceAlphaOnly({regex: '[a-zA-Z_ ]'});
+
+        $("#Register").click(function () {
+            var name = $("#txt_Name").val();
+            var mob = $("#txt_Mob").val();
+            var email = $("#txt_Email").val();
+            if (name.length < 2) {
+                $("#txt_Name").parent().addClass('errored');
+                $("#txt_Name").val('');
+                return false;
+            }
+            if ((mob == "") || (mob.length != 10)) {
+                $("#txt_Mob").parent().addClass('errored');
+                return false;
+            }
+            if (email == "") {
+                $("#txt_Email").parent().addClass('errored');
+                return false;
+            }
+            sendData(name, mob, email);
+        });
+    });
+
+    function validateEmail($email) {
+        var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+        if (!emailReg.test($email)) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    (function ($) {
+        $.fn.extend({
+            ForceAlphaOnly: function (options) {
+                var defaults = {
+                    regex: ".*",
+                    live: false
+                }
+                var options = $.extend(defaults, options);
+                var regex = new RegExp(options.regex);
+
+                function filter_input_function(event) {
+                    var key = event.charCode ? event.charCode : event.keyCode ? event.keyCode : 0;
+                    // 8 = backspace, 9 = tab, 13 = enter, 35 = end, 36 = home, 37 = left, 39 = right, 46 = delete
+                    if (key == 8 || key == 9 || key == 13 || key == 35 || key == 36 || key == 37 || key == 39 || key == 46) {
+                        if ($.browser.mozilla) {
+                            // if charCode = key & keyCode = 0
+                            // 35 = #, 36 = $, 37 = %, 39 = ', 46 = .
+                            if (event.charCode == 0 && event.keyCode == key) {
+                                return true;
+                            }
+                        }
+                    }
+                    var string = String.fromCharCode(key);
+                    if (regex.test(string)) {
+                        return true;
+                    } else if (typeof (options.feedback) == 'function') {
+                        options.feedback.call(this, string);
+                    }
+                    return false;
+                }
+
+                if (options.live) {
+                    $(this).live('keypress', filter_input_function);
+                } else {
+                    return this.each(function () {
+                        var input = $(this);
+                        input.unbind('keypress').keypress(filter_input_function);
+                    });
+                }
+            }
+        });
+    })(jQuery);
+
+    function validateEmailsimaple() {
+
+        var ema = $("#txt_Email").val();
+        if (ema != "") {
+            if (!validateEmail(ema)) {
+
+                $("#txt_Email").parent().addClass('errored');
+                $("#showerror").html('Enter vaild E-Mail Id.')
+                $("#txt_Email").val("");
+                return false;
+            }
+        }
+    }
+
+    function validateEmailsimaplel() {
+
+        var ema = $("#txt_Email").val();
+        if (ema != "") {
+            if (!validateEmail(ema)) {
+
+                $("#txt_Email").parent().addClass('errored');
+                $("#showerror_log").html('Enter vaild E-Mail Id.')
+                $("#txt_Email").val("");
+                return false;
+            }
+        }
+    }
+
+    function sendData(name, mob, mail) {
+        var loc = window.location.href;
+        loc = (loc.substr(loc.length - 1, 1) == "/") ? loc + "Career_Entry.aspx" : loc;
+        $.ajax({
+            type: "POST",
+            url: "Career_Entry.aspx" + "/CheckUserName",
+            data: '{"Mob":"' + mob + '","Mail":"' + mail + '"}',
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (msg) {
+
+                if (msg.d) {
+
+                    //Create a Form
+                    var $form = $("<form/>").attr("id", "data_form")
+                        .attr("action", "Career_Entry.aspx")
+                        .attr("method", "post");
+                    $("body").append($form);
+
+                    //Append the values to be send
+                    AddParameter($form, "hid_name", name);
+                    AddParameter($form, "hid_mob", mob);
+                    AddParameter($form, "hid_email", mail);
+
+                    //Send the Form
+                    $form[0].submit();
+                }
+                else {
+                    $("#showerror").html('Mobile no. already registered.<br><a href="#" class="general_read_more">Login with Mobile & E-mail</a>');
+                    $("#showerror_log").html('Mobile no & E-Mail does not match');
+                }
+            },
+            error: function () {
+                $("#showerror").html('An unexpected error has occurred during processing.');
+                $("#showerror_log").html('An unexpected error has occurred during processing.')
+            }
+        });
+    }
+
+    function AddParameter(form, name, value) {
+        var $input = $("<input />").attr("type", "hidden")
+            .attr("name", name)
+            .attr("value", value);
+        form.append($input);
+    }
+
+    function callpostback(c) {
+        document.getElementById("hid_jcode").value = c;
+        document.contact_form.method = "post";
+        document.contact_form.action = "Career.asp";
+        document.contact_form.submit();
+    }
+</script>
+
+<body>
+<section class="section_slider_2">
+    <div class="slider_line_1"></div>
+    <div class="inner">
+        <div id="slider" class="nivoSlider">
+            <img src="images/pic_slider_4_1.jpg" alt="" title="#caption_2"/>
+            <img src="images/pic_slider_4_2.jpg" alt="" title="#caption_1"/>
+            <img src="images/pic_slider_4_3.jpg" alt="" title="#caption_3"/>
+        </div>
+    </div>
+    <div class="slider_line_2"></div>
+    <div id="caption_1" class="nivo-html-caption">
+        <h6>Career @ Dyntat</h6>
+        <p>I stepped in with a qualification and ambition but I am now filled with passion and determination to create a
+            difference</p>
+    </div>
+    <div id="caption_2" class="nivo-html-caption">
+        <h6>If you are the one who thinks</h6>
+        <p>creativity does wonders, innovation is the way of life, learning is continuous process, challenges are to be
+            faced head on and service to the community</p>
+    </div>
+    <div id="caption_3" class="nivo-html-caption">
+        <p>In a healthcare, you are pushed with a drive to serve and not to work</p>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            $('#slider').nivoSlider({
+                afterLoad: function () {
+                    var width = 100 / $('.section_slider_2 .nivo-controlNav a').length;
+                    $('.section_slider_2 .nivo-controlNav a').css('width', width + '%');
+                    $('.section_slider_2 .nivo-directionNav a').attr('href', 'javascript:void(0)');
+                }
+            });
+        });
+    </script>
+</section>
+</body>
+
+</html>

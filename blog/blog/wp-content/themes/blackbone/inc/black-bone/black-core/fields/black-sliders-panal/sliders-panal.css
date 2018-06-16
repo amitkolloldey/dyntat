@@ -1,0 +1,49 @@
+.form-group.bb-field-warp .slide-panal-wrappre {
+  border: 1px solid #d2d2d2;
+  padding: 8px;
+}
+.slide-panal-wrappre .single-slide-panal {
+  background: #f7f7f7 none repeat scroll 0 0;
+  border: 1px solid #dfdfdf;
+  margin-bottom: 10px;
+}
+.single-slide-panal .slide-panal-title {
+  background: #3498db none repeat scroll 0 0;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: block;
+  padding: 8px 10px;
+  text-transform: capitalize;
+  width: 100%;
+}
+.single-slide-panal .slide-panal-title > h4 {
+  margin: 0;
+  cursor: pointer;
+}
+.bb-field-warp .add_slide_panal {
+  border: 1px solid #dfdfdf;
+  cursor: pointer;
+  display: block;
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+}
+.slide-panal-wrappre .slide-panal-fields {
+  background: #ffffff none repeat scroll 0 0;
+  padding: 15px 10px !important;
+}
+.slide-panal-wrappre .slide-panal-fields .form-group {
+  clear: both;
+  display: block;
+  padding: 8px 0 !important;
+}
+.slide-panal-wrappre .slide-panal-fields .form-group .btn.delt-single-panal {
+  background: #f0f0f0 none repeat scroll 0 0;
+  display: block;
+  font-size: 12px;
+  margin: 0;
+  padding: 10px;
+  text-transform: capitalize;
+  width: 100%;
+}

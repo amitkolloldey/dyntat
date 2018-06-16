@@ -1,0 +1,1 @@
+[18-Sep-2017 22:53:48 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/howtorelief/public_html/wp-content/themes/blackbone/index.php on line 1

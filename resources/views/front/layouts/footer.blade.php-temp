@@ -1,0 +1,122 @@
+<footer class="footer-warp">
+    <div class="footer-widget">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="widget-warp footer-1">
+                        <div class="single-widget">
+                            <h4>About</h4>
+                            <ul>
+                                <li><a href="{{ route('about.front') }}"> Company</a></li>
+                                <li><a href="{{ route('management.front') }}"> Management & Leadership</a></li>
+                                <li><a href="{{ route('footprint.front') }}"> Our Global Footprint</a></li>
+                                <li><a href="{{ route('home.blog') }}">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-12">
+                    <div class="widget-warp footer-2">
+                        <div class="single-widget">
+                            <h4>Laboratory</h4>
+                            <ul>
+                                <li><a href="{{ route('laboratory.front') }}">About Lab</a></li>
+                                <li><a href="{{ route('accreditation.front') }}">Quality</a></li>
+                                <li><a href="{{ route('technologies.front') }}">Technologies</a></li>
+                                <li><a href="{{ route('instruments.front') }}">Instruments</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-12">
+                    <div class="widget-warp footer-3">
+                        <div class="single-widget">
+                            <h4>Opportunities</h4>
+                            <ul>
+                                <li><a href="{{ route('career') }}"> Careers</a></li>
+                                <li><a href="{{ route('opportunitie.front') }}">Be our Partner</a></li>
+                                <li><a href="{{route('offers.front')}}">Special Offer</a></li>
+                                <li><a href="{{route('media.front')}}">Media</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-2 col-xs-12">
+                    <div class="widget-warp footer-3">
+                        <div class="single-widget">
+                            <h4>Our Service</h4>
+                            <ul>
+                                <li><a href="{{ route('test.all.front') }}">Book A Test</a></li>
+                                <li><a href="{{ route('testmenu') }}">Test Menu</a></li>
+                                <li><a href="{{ route('health.all.front') }}">Health Screening</a></li>
+                                <li><a href="{{ route('reportTrack.front') }}">Report Track</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="widget-warp footer-4">
+                        <div class="single-widget">
+                            <h4>Address</h4>
+                            <ul>
+                                <li>
+                                    <address style="color: #BEC0C2;">Confidence Centre (12th floor), Kha-9, Pragoti
+                                        Sarani, Shazadpur,
+                                    </address>
+                                </li>
+                                <li>
+                                    <address style="color: #BEC0C2;">Gulshan, Dhaka -1212, Bangladesh</address>
+                                </li>
+                                <li><a href="tel:+8801944443850">Tel: (+88) 01944443850,</a><br><a href="tel:+8801944443851">(+88) 01944443851, </a><a href="tel:+8809666737373">(+88) 09666737373</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-12">
+                    <div class="footerbtm-left">
+                        <span class="copy-msg">Copyright @ 2017 | Dr A Velumani - Dyntat Bangladesh Limited. All rights reserved.</span>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <div class="footerbtm-right">
+                        <ul class="footer-menu">
+
+                            <li class="social-icons">Follow Us :
+                                {{--<a class="social facebook" href="https://www.facebook.com/dyntatbd/" target="_blank"><i--}}
+                                {{--class="fa fa-facebook-square" aria-hidden="true"--}}
+                                {{--style="margin-right: 0px;color: blue;"></i></a>--}}
+                                <a class="social facebook" href="https://www.facebook.com/dyntatbd/" target="_blank">
+                                    <span> <img src="{{asset('public/assets/images/facebook.png')}}" style="width: 1.5em;" alt="Facebook"></span>
+                                </a>
+                                <a class="social youtube"
+                                   href="https://www.youtube.com/channel/UCNz8x8dIfldAPiumTUsh0MQ" target="_blank">
+                                    <span> <img src="{{asset('public/assets/images/youtube.png')}}" style="width: 1.5em;" alt="Youtube"></span>
+
+                                </a>
+                                <a class="social instagram" href="https://www.instagram.com/dyntat.bd"
+                                   target="_blank">
+                                    <span> <img src="{{asset('public/assets/images/instagram.png')}}" style="width: 1.5em;" alt="Facebook"></span>
+
+                                </a>
+                            </li>
+
+
+                            <li><a href="{{ route('terms.front') }}">Terms</a></li>
+                            <li><a href="{{ route('privacyPolicy.front') }}">Privacy Policy</a></li>
+                            <li><a href="{{ route('sitemap.front') }}">Sitemap</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

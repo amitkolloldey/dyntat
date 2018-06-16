@@ -1,0 +1,178 @@
+/*---------------------------------------------------------------------------
+*                      All Responsive CSS For Medium Devices Desktops
+*----------------------------------------------------------------------------*/
+@media (min-width: 992px) and (max-width: 1199px) {
+	.container {
+	  width: 970px !important;
+	} 
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.container {
+	  width: 750px !important;
+	 }
+	.single-post .post-thumb {
+	  float: none; 
+	  width: 100%;
+	}
+	.single-post .post-cont {
+	  margin-top: 20px;
+	  overflow: visible;
+	  padding-left: 0;
+	}
+	
+	.blog-posts.style-bbone .cat-post-col-6 {
+	  float: left;
+	  width: calc(100% / 1 - 10px);
+	}
+	.blog-posts.style-bbone .cat-post-col-6 .normal-post.single-post { 
+	  padding-left: 0;
+	}
+	.blog-posts.style-bbone .cat-post-col-6 .single-post.normal-post .post-thumb {
+	  float: left;
+	  margin-right: 15px; 
+	}
+	.blog-posts.style-bbone .cat-post-col-6 .single-post.normal-post .post-cont {
+	  margin-top: 0;
+	}
+	.blog-posts.style-bbtow .cat-post-col-12 .single-post.big-post {
+	  float: none; 
+	  width: calc(100% / 1 - 0px);
+	}
+	.blog-posts.style-bbtow .cat-post-col-12 .single-post.normal-post { 
+	  float: none;
+	  width: calc(100% / 1 - 0px);
+	}
+	.blog-posts.style-bbtow .cat-post-col-12 .single-post.normal-post .post-thumb {
+	  float: left;
+	  margin-right: 10px; 
+	}
+	.blog-posts.style-bbtow .cat-post-col-12 .single-post.normal-post .post-cont {
+	  margin-top: 0;
+	}
+	.blog-pagination { 
+	  margin-bottom: 40px; 
+	}
+
+}
+@media only screen and (max-width:767px) {
+	.container {
+	  width: 100% !important;
+	}
+	#bb-menu-bar.menu-bar.bb-nav-style-tow .container {
+	  padding-left: 15px !important;
+	  padding-right: 15px !important;
+	}
+	#bb-menu-bar.menu-bar.bb-nav-style-tow .bb-nav-wrapper .site-logo{
+	  display: block !important;
+	}
+	.menu-bar.bb-nav-style-tow .site-logo img {
+	  max-height: 55px; 
+	}
+	.bb-nav-wrapper .mobile-menu-active {
+	  border: medium none;
+	  border-radius: 3px;
+	  cursor: pointer;
+	  display: block;
+	  float: right;
+	  height: 38px;
+	  margin: 22px 0;
+	  padding: 9px 6px;
+	  width: 40px;
+	}
+	.bb-nav-wrapper .mobile-menu-active > span {
+	  background: #ffffff none repeat scroll 0 0;
+	  display: block;
+	  height: 5px;
+	  margin-bottom: 5px;
+	  width: 100%;
+	}
+	#bb-menu-bar.menu-bar.bb-nav-style-tow .bb-nav-wrapper .menu-wrapper {
+	  display: none;
+	  float: left;
+	  width: 100%;
+	}
+	#bb-menu-bar.menu-bar.bb-nav-style-tow .bb-nav-wrapper .menu-wrapper ul li {
+	  float: none;
+	  list-style: outside none none;
+	  margin-left: -15px;
+	  margin-right: -15px;
+	  position: relative;
+	}
+	#bb-menu-bar.menu-bar.bb-nav-style-tow .bb-nav-wrapper .menu-wrapper ul li a {
+	  color: #ffffff;
+	  display: block;
+	  padding: 15px 30px;
+	  text-transform: uppercase;
+	}
+	.baner-bar { 
+	  height: auto; 
+	}
+	.baner-bar .site-logo, .baner-bar .site-baner { 
+	  text-align: center;
+	}
+	.single-post .post-thumb {
+	  float: none; 
+	  width: 100%;
+	}
+	.single-post .post-cont {
+	  margin-top: 20px;
+	  overflow: visible;
+	  padding-left: 0;
+	}
+	.bb-blog-right-sidebar {
+	  padding-left: 25px;
+	  padding-right: 25px;
+	}
+
+	.blog-posts.style-bbone .cat-post-col-6 {
+	  float: left;
+	  width: calc(100% / 1 - 10px);
+	}
+	.blog-posts.style-bbone .cat-post-col-6 .normal-post.single-post { 
+	  padding-left: 0;
+	}
+	.blog-posts.style-bbone .cat-post-col-6 .single-post.normal-post .post-thumb {
+	  float: left;
+	  margin-right: 15px; 
+	}
+	.blog-posts.style-bbone .cat-post-col-6 .single-post.normal-post .post-cont {
+	  margin-top: 0;
+	}
+	.blog-posts.style-bbtow .cat-post-col-12 .single-post.big-post {
+	  float: none; 
+	  width: calc(100% / 1 - 0px);
+	}
+	.blog-posts.style-bbtow .cat-post-col-12 .single-post.normal-post { 
+	  float: none;
+	  width: calc(100% / 1 - 0px);
+	}
+	.blog-posts.style-bbtow .cat-post-col-12 .single-post.normal-post .post-thumb {
+	  float: left;
+	  margin-right: 10px; 
+	}
+	.blog-posts.style-bbtow .cat-post-col-12 .single-post.normal-post .post-cont {
+	  margin-top: 0;
+	}
+	.footer-right {
+	  float: none;
+	  text-align: center;
+	}
+	.footer-copytext {
+	  text-align: center;
+	}
+	.footer .social-icon {
+	  display: inline-block;
+	  float: none;
+	}
+	.sidebar-wrapper { 
+	  padding-left: 25px;
+	  padding-right: 25px; 
+	}
+	.blog-pagination { 
+	  margin-bottom: 40px; 
+	}
+	.single-post .post-cont h2.title {
+	  font-size: 16px;
+	  font-weight: 600; 
+	}
+}

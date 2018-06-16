@@ -1,0 +1,16 @@
+.section_slider_6 {}
+.section_slider_6 .inner {padding-top:1px; position:relative; margin-bottom:30px;}
+.section_slider_6 .slider_line_1 {height:5px; overflow:hidden; position:absolute; left:0px; right:0px; top:-4px; background:url(images/bg_slider_line_6_1.jpg) repeat-x;}
+.section_slider_6 .slider_line_2 {height:5px; overflow:hidden; background:url(images/bg_slider_line_6_2.jpg) repeat-x;}
+.section_slider_6 .flex-direction-nav {position:absolute; right:18px; bottom:18px;}
+.section_slider_6 .flex-direction-nav li {margin-left:2px; float:left; display:block;}
+.section_slider_6 .flex-direction-nav li:first-child {margin-left:0px;}
+.section_slider_6 .flex-direction-nav li a {width:27px; height:27px; display:block; background-repeat:no-repeat; background-image:url(images/sprite_arrow_5.png); text-indent:-9000px;}
+.section_slider_6 .flex-direction-nav li a.flex-prev {background-position:left top;}
+.section_slider_6 .flex-direction-nav li a.flex-prev:hover {background-position:left bottom;}
+.section_slider_6 .flex-direction-nav li a.flex-next {background-position:right top;}
+.section_slider_6 .flex-direction-nav li a.flex-next:hover {background-position:right bottom;}
+.section_slider_6 li {position:relative;}
+.section_slider_6 .caption {width:275px; padding:15px 18px 14px; position:absolute; left:18px; bottom:18px; background:url(images/bg_caption_6.png);}
+.section_slider_6 .caption h6 {padding-bottom:9px; color:#f1f1f1;}
+.section_slider_6 .caption p {padding-bottom:0px; font-family:'Lucida Sans Unicode', Arial, Helvetica, sans-serif; font-size:12px; color:#c7c7c7; line-height:16px;}
